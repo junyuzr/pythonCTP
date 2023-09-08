@@ -1,4 +1,4 @@
-# 模拟CTP获取tick数据
+
 ```python
 import os, csv, threading, time
 from datetime import datetime, timedelta
@@ -17,7 +17,6 @@ for fpath in fpaths:
             data_list.append(row)
 print(f'totals:{len(data_list)}')
 data_list.sort(key=lambda x: (x[9]))  # 根据系统时间排序 模拟tick数据
-
 
 class BarData(object):
     def __init__(self):
