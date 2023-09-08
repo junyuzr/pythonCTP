@@ -1,3 +1,4 @@
+# 模拟CTP获取tick数据
 ```python
 import os, csv, threading, time
 from datetime import datetime, timedelta
