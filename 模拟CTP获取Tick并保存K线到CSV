@@ -1,4 +1,4 @@
-···python
+```python
 import os, csv, threading, time
 from datetime import datetime, timedelta
 from queue import Queue
@@ -64,7 +64,6 @@ class Storedata(object):
             # 30分钟K线对象
             self.km30bar[id] = None
             self.bar_write(f"./databar/{id}_30m.csv", 'k30m_' + id)
-```
 
     def bar_write(self, barname, key):
         if not os.path.exists(barname):
@@ -250,3 +249,4 @@ for id in subID:
         csv.writer(f1).writerows(m1)
         csv.writer(f2).writerows(m5)
         csv.writer(f3).writerows(m30)
+```
